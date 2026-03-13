@@ -9,7 +9,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 # =========================
 # TMDB API KEY (from secrets)
 # =========================
-TMDB_API_KEY = st.secrets["3313c5a7de33d64379168a116dcc80c3"]
+TMDB_API_KEY = st.secrets["TMDB_API_KEY"]
 PLACEHOLDER_POSTER = "https://via.placeholder.com/500x750?text=No+Poster"
 
 st.markdown(
