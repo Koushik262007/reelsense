@@ -7,8 +7,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 # =========================
 # Step 1: Load datasets
 # =========================
-movies = pd.read_csv("tmdb_5000_movies.csv")
-credits = pd.read_csv("tmdb_5000_credits.csv")
+movies = pd.read_csv("https://raw.githubusercontent.com/tmdb/tmdb-movie-metadata/master/tmdb_5000_movies.csv")
+credits = pd.read_csv("https://raw.githubusercontent.com/tmdb/tmdb-movie-metadata/master/tmdb_5000_credits.csv")
 
 # =========================
 # Step 2: Merge datasets
