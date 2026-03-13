@@ -80,7 +80,7 @@ def fetch_poster(movie_id):
 @st.cache_data
 def load_data():
    movies_df = pd.read_csv("https://raw.githubusercontent.com/tmdb/tmdb-movie-metadata/master/tmdb_5000_movies.csv")
-credits_df = pd.read_csv("https://raw.githubusercontent.com/tmdb/tmdb-movie-metadata/master/tmdb_5000_credits.csv")
+    credits_df = pd.read_csv("https://raw.githubusercontent.com/tmdb/tmdb-movie-metadata/master/tmdb_5000_credits.csv")
 
     movies_df = movies_df.merge(credits_df, on="title")
     movies_df = movies_df[['movie_id', 'title', 'overview', 'genres', 'keywords', 'cast', 'crew']]
